@@ -1,0 +1,61 @@
+div {
+  background-color: hsl(0, 0%, 98%);
+  border-bottom: 1px solid hsl(233, 11%, 84%);
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-item {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+input {
+  margin-top: 5px;
+}
+
+img {
+  margin-right: 15px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.dark-theme {
+  background-color: hsl(235, 24%, 19%);
+  color: hsl(234, 39%, 85%);
+  .complete {
+    color: hsl(233, 14%, 35%);
+  }
+}
+
+.light-theme {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(235, 19%, 35%);
+  .complete {
+    color: hsl(236, 33%, 92%);
+  }
+}
+
+.complete {
+  text-decoration: line-through;
+}
+
+mat-checkbox {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+}
+
+::ng-deep .mat-checkbox-frame, .mat-checkbox-background {
+  border-radius: 50% !important;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  border-radius: 50% !important;
+}

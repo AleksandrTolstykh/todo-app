@@ -1,0 +1,4 @@
+<div [class.dark-theme]="darkTheme" [class.light-theme]="!darkTheme" [class.first-item]="firstItem">
+  <p><mat-checkbox [checked]="checked" [class.complete]="checked" (change)="onChecked($event)">{{content}}</mat-checkbox></p>
+  <img (click)="onClick($event)" src="./assets/icon-cross.svg" alt="delete-item" />
+</div>

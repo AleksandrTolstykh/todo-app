@@ -1,0 +1,10 @@
+<div
+  [class.rounded-top-border]="(completedItems === 0 && itemsLeft === 0 && filter === 'all') || (itemsLeft === 0 && filter === 'active') || (completedItems === 0 && filter === 'completed')"
+  [class.dark-theme]="darkTheme"
+  [class.light-theme]="!darkTheme">
+    <p>{{itemsLeft}} items left</p>
+    <button (click)="onAllClick($event)" mat-button class="all-button selected-filter">All</button>
+    <button (click)="onActiveClick($event)" mat-button class="active-button">Active</button>
+    <button (click)="onCompletedClick($event)" mat-button class="completed-button">Completed</button>
+    <button (click)="onClearClick($event)" mat-button class="clear-button">Clear Completed</button>
+</div>

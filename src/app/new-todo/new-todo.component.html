@@ -1,0 +1,6 @@
+<div [class.dark-theme]="darkTheme" [class.light-theme]="!darkTheme">
+  <mat-checkbox (change)="onChecked($event)"></mat-checkbox>
+  <mat-form-field appearance="fill">
+    <input [(ngModel)]="content" matInput placeholder="Create a new todo...">
+  </mat-form-field>
+</div>
